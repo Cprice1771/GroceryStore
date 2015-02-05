@@ -37,7 +37,7 @@ namespace GroceryStore
             stackPanelOverview.Children.Clear();
             using (SqlConnection conn =
                     new SqlConnection(
-                        @"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + System.AppDomain.CurrentDomain.BaseDirectory + "Inventory.mdf;Integrated Security=True")
+                        @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\projects\VS2012\GroceryStore\GroceryStore\Inventory.mdf;Integrated Security=True")
                 )
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -80,7 +80,7 @@ namespace GroceryStore
             DateTime dateReceived)
         {
             using (var conn =
-                    new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + System.AppDomain.CurrentDomain.BaseDirectory + "Inventory.mdf;Integrated Security=True"))
+                    new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\projects\VS2012\GroceryStore\GroceryStore\Inventory.mdf;Integrated Security=True"))
             {
                 using (var cmd = new SqlCommand())
                 {
@@ -123,8 +123,6 @@ namespace GroceryStore
             }
         }
         
-
-
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             InitInventory();
@@ -142,11 +140,6 @@ namespace GroceryStore
                 MessageBox.Show("One of the inputs is invalid!", "Error", MessageBoxButton.OK,
                             MessageBoxImage.Error);
             }
-            
         }
-
-
-
-
     }
 }

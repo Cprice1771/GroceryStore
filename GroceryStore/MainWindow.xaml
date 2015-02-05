@@ -8,8 +8,7 @@
             <ColumnDefinition Width="689*"/>
         </Grid.ColumnDefinitions>
         <TabControl
-		    Margin="10,10,0,0"
-		    SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2">
+		    Margin="10,10,0,0" Grid.ColumnSpan="2">
             <TabItem x:Name="tabItemOverveiw" Header="Overview">
                 <Grid x:Name="tabControlMain" Background="#FFE5E5E5">
                     <StackPanel x:Name="stackPanelOverview" HorizontalAlignment="Left" Height="542" Margin="10,10,0,0" VerticalAlignment="Top" Width="848"/>
